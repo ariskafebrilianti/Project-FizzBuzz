@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FizzBuzz!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <header></header>
-<main>    <h1>Get a FizzBuzz Result!</h1>
+<main>    
+    <h1>Get a FizzBuzz Result!</h1>
     <label for="multiple">Type a number:</label>
     <input id="multiple" type="text">
     <button onclick="result();">Click here!</button>
@@ -16,11 +20,43 @@
     <div id="display"></div>
     <script src="fizzbuzz!.js"></script>
     <style>
-        .border {
-    border-bottom: 1px solid grey;
-    margin-top: 10px;
+* {
+    background-color: #eef9bf;
+    font-family: 'Fredoka One';
 }
-    </style></main>
+        .border {
+    border-bottom: 3px solid #75b79e;
+    margin-top: 10px;
+    }
+    label, input {
+        color: #75b79e;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    input {
+        border-radius: 9px;
+    }
+    #display {
+        color: #75b79e;
+        font-size: 17px;
+        font-weight: 100;
+    }
+    button {
+        background-color: #75b79e;
+        border: none;
+        color: #eef9bf;
+        border-radius: 20px;
+        width: 95px;
+        aspect-ratio: 1,5;
+        text-align: center;
+    }
+    h1 {
+    color: #6a8caf;
+    font-size: 35px;
+    font-weight: 500;
+    }
+    </style>
+    </main>
 <footer></footer>
 </body>
 </html>
