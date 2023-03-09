@@ -3,7 +3,7 @@ function result() {
 
     let finalRes = ""
     if(inputMultiple % 15 === 0) {
-        finalRes = "FizzBuzz!"
+        finalRes = "FizzBuzz!" 
     } else if (inputMultiple % 5 === 0){
         finalRes = "Buzz!"
     } else if (inputMultiple % 3 === 0) {
@@ -13,5 +13,5 @@ function result() {
     }
     const value = document.createElement("p")
     value.innerHTML = finalRes
-    document.getElementById('display').appendChild(value);
+    document.getElementById('display').prepend(value)
 }
